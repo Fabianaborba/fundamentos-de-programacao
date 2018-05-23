@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<locale.h>
 
-int main () {
+int main(){
   setlocale(LC_ALL, "Portuguese");
 
   int num = 0;
@@ -11,12 +11,12 @@ int main () {
     printf("Número: ");
     scanf("%d", &num);
 
-    while(num % 2 == 0) {
+    while(num % 2 == 0){
       printf("Par\n");
       break;
     }
 
-    while(num % 2 == 1) {
+    while(num % 2 == 1){
       printf("Ímpar\n");
       break;
     }

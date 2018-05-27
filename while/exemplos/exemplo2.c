@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 int main(){
-
 	int number;
 	unsigned long long factorial;
 

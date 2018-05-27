@@ -1,6 +1,6 @@
-#include <stdio.h>
+#include<stdio.h>
 
-int glauco(){
+int letraF(){
 	printf("\n*****");
 	printf("\n*");
 	printf("\n*****");
@@ -10,8 +10,7 @@ int glauco(){
 }
 
 int main(){
-	
-	glauco();
+	letraF();
 
 	return 0;
 }

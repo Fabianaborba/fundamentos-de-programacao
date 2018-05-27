@@ -2,8 +2,8 @@
 #include<stdlib.h>
 
 int main(){
-	int numero,
-  		resto;
+	int numero = 0,
+  		resto  = 0;
 
 	printf("Informe um numero: ");
 	scanf("%d", &numero);
@@ -19,6 +19,7 @@ int main(){
     printf("impar.\n\n");
   }
 
+  printf("\n\n");
   system("pause");
   return 0;
 }

@@ -2,17 +2,17 @@
 #include<conio.h>
 #include<stdlib.h>
 
-#define celsiusParaFahrenheit 1
-#define fahrenheitParaCelsius 2
-#define celsiusParaKelvin     3
-#define kelvinParaCelsius     4
+#define CELSIUS_FAHRENHEIT 1
+#define FAHRENHEIT_CELSIUS 2
+#define CELSIUS_KELVIN     3
+#define KELVIN_CELSIUS     4
 
 int main() {
-	float temperaturaOriginal;
-	float temperaturaConvertida;
-	int menu;
+	float temperaturaOriginal   = 0,
+	      temperaturaConvertida = 0;
+	int menu = 0;
 
-	menu = celsiusParaFahrenheit;
+	menu = CELSIUS_FAHRENHEIT;
 	system("cls");
 	printf("\t\t\t***************************\n");
 	printf("\t\t\t           M E N U         \n");
@@ -33,23 +33,24 @@ int main() {
 	printf("\t\t    Digite a temperatura a ser convertida:");
 	scanf("%f",&temperaturaOriginal);
 
-	if(menu == celsiusParaFahrenheit){
+	if(menu == CELSIUS_FAHRENHEIT){
 		temperaturaConvertida = (temperaturaOriginal * 1.8) + 32;
 		printf("\t\t\t1. A temperatura de Celsius para Fahrenheit é: %f\n", temperaturaConvertida);
 	}
-	if(menu == fahrenheitParaCelsius){
+	if(menu == FAHRENHEIT_CELSIUS){
 		temperaturaConvertida = (temperaturaOriginal - 32) / 1.8;
 		printf("\t\t\t1. A temperatura de Fahrenheit para Celsius é: %f\n", temperaturaConvertida);
 	}
-	if(menu == celsiusParaKelvin){
+	if(menu == CELSIUS_KELVIN){
 		temperaturaConvertida = (temperaturaOriginal  + 273);
 		printf("\t\t\t1. A temperatura de Celsius para Kelvin é: %f\n", temperaturaConvertida);
 	}
-	if(menu == kelvinParaCelsius){
+	if(menu == KELVIN_CELSIUS){
 		temperaturaConvertida = (temperaturaOriginal  - 273);
 		printf("\t\t\t1. A temperatura de Kelvin para Celsius é: %f\n", temperaturaConvertida);
 	}
 
+  printf("\n\n");
   system("pause");
   return 0;
 }

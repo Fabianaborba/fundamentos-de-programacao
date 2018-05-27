@@ -2,13 +2,13 @@
 #include<stdlib.h>
 
 int main(){
- 	int idade,
-      nascimento,
-      ano,
-      maioridade;
+ 	int idade      = 0,
+      nascimento = 0,
+      ano        = 0,
+      maioridade = 0;
  	char nome[256];
 
- 	ano = 2018;
+ 	ano        = 2018;
  	maioridade = 18;
 
  	printf("Digite o seu nome: ");

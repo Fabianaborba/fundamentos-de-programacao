@@ -2,17 +2,17 @@
 #include<stdlib.h>
 
 int main(){
-	float precoGasolina,
-		    precoAlcool,
-		    diferenca,
-		    rendimento;
+  float precoGasolina = 0,
+        precoAlcool   = 0,
+		    diferenca     = 0,
+		    rendimento    = 0;
 
 	rendimento = 0.7;
 
 	printf("Preco da gasolina: ");
 	scanf("%f", &precoGasolina);
 
-	printf("Preco do Alcool: ");
+	printf("Preco do alcool: ");
 	scanf("%f", &precoAlcool);
 
 	diferenca = precoAlcool / precoGasolina;

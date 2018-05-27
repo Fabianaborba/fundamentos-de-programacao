@@ -1,10 +1,11 @@
-#include <stdio.h>
-#include <windows.h>
+#include<stdio.h>
+#include<windows.h>
+
 #define LINHAS  14
 #define COLUNAS 23
 
 void gotoxy(short col, short row);
-void tela(short col, short row,char letra[LINHAS][COLUNAS]);
+void tela(short col, short row, char letra[LINHAS][COLUNAS]);
 
 int main() {
 	char desenharTela[LINHAS][COLUNAS] = {
@@ -24,20 +25,20 @@ int main() {
     {200,205,205,205,205,205,205,205,205,205,205,205,205,205,205,205,205,205,205,205,205,205,188}
   };
 
-  tela( 0, 0, desenharTela );
+  tela(0, 0, desenharTela);
 }
 
-void tela(short col, short row,char letra[LINHAS][COLUNAS]) {
+void tela(short col, short row, char letra[LINHAS][COLUNAS]) {
   int linha,coluna;
   for(linha = 0; linha < LINHAS; linha++) {
-  	for( coluna = 0; coluna < COLUNAS; coluna++) {
-		gotoxy(col+coluna,row+linha);
-  		printf("%c",letra[linha][coluna]);
+  	for(coluna = 0; coluna < COLUNAS; coluna++) {
+		gotoxy(col + coluna, row + linha);
+  		printf("%c", letra[linha][coluna]);
   	}
   }
 }
 
 void gotoxy(short x, short y) {
- COORD pos ={x,y};
- SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+  COORD pos = {x, y};
+  SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
 }

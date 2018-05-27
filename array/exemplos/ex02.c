@@ -1,10 +1,11 @@
-#include <stdio.h>
-#include <windows.h>
+#include<stdio.h>
+#include<windows.h>
+
 #define LINHAS  5
 #define COLUNAS 4
 
 void gotoxy(short col, short row);
-void escreveLetra(short col, short row,char letra[LINHAS][COLUNAS]);
+void escreveLetra(short col, short row, char letra[LINHAS][COLUNAS]);
 
 main() {
   char letraF[LINHAS][COLUNAS] = {
@@ -46,15 +47,16 @@ main() {
 
 void escreveLetra(short col, short row,char letra[LINHAS][COLUNAS]) {
   int linha,coluna;
+
   for(linha = 0; linha < LINHAS; linha++) {
-  	for( coluna = 0; coluna < COLUNAS; coluna++) {
-		gotoxy(col+coluna,row+linha);
-  		printf("%c",letra[linha][coluna]);
+  	for(coluna = 0; coluna < COLUNAS; coluna++) {
+		  gotoxy(col + coluna, row + linha);
+  		printf("%c", letra[linha][coluna]);
   	}
   }
 }
 
 void gotoxy(short x, short y) {
- COORD pos ={x,y};
- SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+  COORD pos = {x, y};
+  SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
 }

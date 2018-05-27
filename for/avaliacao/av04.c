@@ -1,4 +1,4 @@
-/* O PROGRAMA SOLICITATÁ UMA FRASE E UMA PALAVRA AO 
+/* O PROGRAMA SOLICITATÁ UMA FRASE E UMA PALAVRA AO
 USUÁRIO E VERIFICARÁ SE A PALAVRA EXISTE NA FRASE */
 
 #include<stdio.h>
@@ -15,20 +15,20 @@ int main (){
 		 tamTexto   = 0,
 	     palavras   = 0,
 		 iguais     = 0,
-		 i          = 0, 
+		 i          = 0,
 		 j          = 0;
 	char texto[255],
 		 palavra[200];
-		
+
 	printf("Digite uma frase: ");
 	gets(texto);
-		
+
 	tamTexto = strlen(texto);
-				
+
 	printf("Digite uma palavra: ");
 	gets(palavra);
-	
-	tamPalavra = strlen(palavra);			
+
+	tamPalavra = strlen(palavra);
 	resultado  = 0;
 	iguais     = 0;
 
@@ -39,7 +39,7 @@ int main (){
 				if (texto[i + j] != palavra [j]) {
 					iguais = 0;
 				}
-			}	
+			}
 		}
 		if (iguais == 1) {
 			i = tamTexto;
@@ -52,7 +52,7 @@ int main (){
 	} else {
 		printf("\nA palavra \"%s\" não foi encontrada na frase.\n\n", palavra);
 	}
-		
+
 	system("pause");
 	system("cls");
 	return 0;

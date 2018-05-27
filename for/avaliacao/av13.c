@@ -1,4 +1,4 @@
-/* O PROGRAMA RECEBERÁ UMA FRASE E 
+/* O PROGRAMA RECEBERÁ UMA FRASE E
 REMOVERÁ OS ESPAÇOS DELA */
 
 #include<stdio.h>
@@ -18,7 +18,7 @@ int main(){
 
     printf("Digite uma frase: ");
 	gets(frase);
-		
+
     tamFrase = strlen(frase);
 
 	for(i = 0; i <= tamFrase; i++){
@@ -27,7 +27,7 @@ int main(){
             j++;
         }
 	}
-		
+
     printf("Frase sem espaços: %s", novaFrase);
 
     printf("\n");

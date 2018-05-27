@@ -16,7 +16,7 @@ int main(){
 
 	printf("\nFrase em maiúsculo: %s", strupr(frase));
 	printf("\nFrase em minúsculo: %s\n", strlwr(frase));
-	
+
 	system("pause");
 	system("cls");
 	return 0;

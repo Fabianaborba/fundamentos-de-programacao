@@ -9,14 +9,14 @@ CARACTERE SERÁ INSERIDO UM ESPAÇO */
 
 int main(){
 	setlocale(LC_ALL, "Portuguese");
-	
+
 	char frase[200];
 	int  i        = 0,
 		 tamFrase = 0;
-	
+
 	printf("Digite uma frase ou palavra: ");
 	gets(frase);
-	
+
 	tamFrase = strlen(frase);
 
 	for(i = 0; i <= tamFrase; i++){

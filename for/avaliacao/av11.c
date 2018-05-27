@@ -12,7 +12,7 @@ int ciclo = 0;
 void imprimeColorido(){
 	HANDLE hConsole;
 	hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-	
+
 	int xRan;
 
 	xRan = rand() % 4 + 1;
@@ -68,7 +68,7 @@ void imprimeColorido(){
 		}
         if(ciclo == 2){
             SetConsoleTextAttribute (hConsole, FOREGROUND_GREEN | FOREGROUND_INTENSITY);
-		}	
+		}
         if(ciclo == 3){
             SetConsoleTextAttribute (hConsole, FOREGROUND_BLUE | FOREGROUND_INTENSITY);
 		}
@@ -76,7 +76,7 @@ void imprimeColorido(){
     }
     else{
         SetConsoleTextAttribute (hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE );
-    }    
+    }
 	SetConsoleTextAttribute (hConsole, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE );
 }
 
@@ -90,7 +90,7 @@ int main () {
 	printf ("Informe quantos níveis terá a árvore: ");
 	scanf ("%d", &numero);
 	printf("\n");
-     
+
 	system("cls");
 	for (int hh = 0; hh < 4; hh++){
 		for (cont=1; cont<=numero; cont++){

@@ -14,12 +14,12 @@ int main () {
         n   = 0,
         m   = 0,
         num = 0;
- 	
+
     printf ("Insira um número: ");
     scanf ("%d", &num);
 
  	printf("\n");
- 	
+
      for (i=1; i<=num; i++){
   		for (j=num; j<=i; j++)
 		printf ("");
@@ -29,7 +29,7 @@ int main () {
  	}
 
     getchar();
-	
+
     printf("\n");
     system("pause");
     system("cls");

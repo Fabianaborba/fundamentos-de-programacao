@@ -1,4 +1,4 @@
-/* O PROGRAMA SOLICITARÁ AO USUÁRIO E INTERCALARÁ 
+/* O PROGRAMA SOLICITARÁ AO USUÁRIO E INTERCALARÁ
 OS CARACTERES EM MAIÚSCULOS E MINÚSCULOS */
 
 #include<stdio.h>
@@ -15,22 +15,22 @@ int main(){
 		 caracter,
 		 maiuscula,
 		 minuscula;
-	
+
 	setlocale(LC_ALL, "Portuguese");
-	
+
 	printf("Digite uma palavra: ");
 	scanf("%s", &palavra);
-	
+
 	tamanho = strlen(palavra);
-	
+
 	printf("\n");
-	
+
 	for(i=0; i <= tamanho; i++){
 		caracter = palavra[i];
 		maiuscula = toupper(caracter);
 		minuscula = tolower(caracter);
 		if(caixaAlta == 1) {
-			caixaAlta = 0; 
+			caixaAlta = 0;
 			printf("%c",maiuscula);
 		} else {
 			caixaAlta = 1;
@@ -38,7 +38,7 @@ int main(){
 		}
 	}
 	printf("\n");
-	
+
 	system("pause");
 	system("cls");
 	return 0;

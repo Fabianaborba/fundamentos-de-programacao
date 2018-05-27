@@ -1,6 +1,6 @@
-#include <stdio.h>
+#include<stdio.h>
 
-main(){
+int main(){
 	puts("Primeira linha\nSegunda linha\te um grande espaco");
 	putchar('\n');
 }
